@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Website Layout</title>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<style>
+		body {
+			margin: 0;
+		}
+
+		/* Style untuk header */
+		.header {
+			background-color: #f1f1f1;
+			padding: 20px;
+			text-align: center;
+		}
+
+		/* Style untuk navigation */
+		.navigation {
+			overflow: hidden;
+			background-color: #03A9F4;
+		}
+
+		/* Style links di navigation */
+		.navigation a {
+			float: left;
+			display: block;
+			color: #f2f2f2;
+			text-align: center;
+			padding: 14px 16px;
+			text-decoration: none;
+		}
+
+		/* Perubahan warna saat hover */
+		.navigation a:hover {
+			background-color: #ddd;
+			color: black;
+		}
+
+		*{
+			box-sizing: border-box;
+		}
+		/*Tiga kolom float yang panjang ke bawahnya tidak sama */
+		.aside, .article {
+			float: left;
+			padding: 10px;
+		}
+
+		/* Kolom Pertama da Ketiga */
+		.aside {
+			width: 25%
+		}
+
+		/* Kolom Kedia */
+		.article {
+			width: 50%
+		}
+
+		/* Responsive layout - kolom di container menjadi baris */
+		@media (max-width: 60p0px) {
+			.aside, .article {
+				width: 100%
+			}
+		}
+	</style>
+</head>
+<body>
+	<div class="header">
+		<h1>Header</h1>
+	</div>
+	<div class="navigation">
+		<a href="#">Link 1</a>
+		<a href="#">Link 2</a>
+		<a href="#">Link 3</a>
+	</div>
+	<div class="container">
+		<div class="aside">
+			<h2>Side</h2>
+			<p>Lorem ipsum dolor sit, amet, consectetur adipiscing elit..</p>
+		</div>
+
+		<div class="article">
+			<h2>Main Content</h2>
+			<p>Loren ipsum dolor sit aet, consectetur adispicing elit, Maecenas sit amet pretium uerna. Vivamus venenatis velit ne neque ultricies, eget elementum magna tristique. Quis vehicula. riusu eget aliqua, placerat, purus leo tincidunt eros, eget luctus quam orci in velit. Preasent scelerisque tortor sed accumsan convallis</p>
+			</head>
+		</div>
+</div>
+</body>
+</html>
